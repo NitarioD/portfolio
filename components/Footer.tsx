@@ -3,6 +3,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { email_addr, socialMedia } from "@/data/index";
 import MagicButton from "./MagicButton";
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
   const dt = new Date().getFullYear();
@@ -41,10 +42,10 @@ const Footer = () => {
             >
               {info.url ? (
                 <Link href={info.url} target="_blank" rel="noreferrer">
-                  <img src={info.img} alt="icons" width={20} height={20} />
+                  <Image src={info.img} alt="icons" width={20} height={20} />
                 </Link>
               ) : (
-                <img src={info.img} alt="icons" width={20} height={20} />
+                <Image src={info.img} alt="icons" width={20} height={20} />
               )}
             </div>
           ))}

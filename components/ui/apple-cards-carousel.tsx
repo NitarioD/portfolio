@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 
 import { FaLocationArrow } from "react-icons/fa6";
 import { PinContainer } from "./Pin";
+import Image from "next/image";
 
 interface CarouselProps {
   items: JSX.Element[];
@@ -139,11 +140,13 @@ export const Card = ({ card }: { card: Card }) => {
               className="relative w-full h-full overflow-hidden lg:rounded-3xl"
               style={{ backgroundColor: "#13162D" }}
             >
-              <img src="/bg.png" alt="bgimg" />
+              <Image width={350} height={350} src="/bg.png" alt="bgimg" />
             </div>
-            <img
+            <Image
               src={card.img}
               alt="cover"
+              width={350}
+              height={350}
               className="z-10 absolute bottom-0"
             />
           </div>
@@ -172,7 +175,13 @@ export const Card = ({ card }: { card: Card }) => {
                     transform: `translateX(-${5 * index + 2}px)`,
                   }}
                 >
-                  <img src={icon} alt="icon5" className="p-2" />
+                  <Image
+                    src={icon}
+                    alt="icon5"
+                    width={70}
+                    height={70}
+                    className="p-2"
+                  />
                 </div>
               ))}
             </div>
