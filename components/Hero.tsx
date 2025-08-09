@@ -57,7 +57,7 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Jola Adunola(NitarioD), a Junior Web Developer based in
+            Hi! I&apos;m Jola Adunola(NitarioD), a Fullstack Web Developer(more focused on frontend, solid in backend) based in
             Africa.
           </p>
 
